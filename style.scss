@@ -1,0 +1,78 @@
+$couleur-principale: orange;
+$couleur-secondaire: yellow;
+
+@mixin ring ($size, $color) {
+  width : $size;
+  height: $size;
+  border: solid $size/10 $color;
+  border-radius: 500px;
+  box-shadow: $size/30 $size/30 $size/30 darken($color,10);
+  margin: 15px + $size/100;
+}
+
+body {
+  font-family: 'Eagle', cursive;
+}
+
+nav {
+  background-color: $couleur-principale;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  color: white;
+}
+
+.logo{
+  width: 40%;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 2em;
+}
+
+.rings-presentation{
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ring-part {
+  display: flex;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.orange-ring {
+  @include ring(40px, $couleur-principale);
+}
+
+.yellow-ring {
+  @include ring(150px, $couleur-secondaire);
+  margin: 2em;
+}
+
+.ring-last-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grey-rings {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+@for $i from 1 through 6 {
+  .ring-#{$i} {
+    @include ring(50px+$i*10px, grey);
+    margin-left : -50px;
+  }
+}

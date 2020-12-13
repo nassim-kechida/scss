@@ -1,0 +1,129 @@
+body {
+    font-family: "Eagle", cursive;
+}
+
+nav {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    color: white;
+}
+
+.logo {
+    width: 40%;
+    font-weight: bold;
+    margin-left: 2em;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 2em;
+}
+
+.rings-presentation {
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ring-part {
+    display: flex;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.orange-ring {
+    width: 40px;
+    height: 40px;
+    border: solid 4px orange;
+    border-radius: 500px;
+    box-shadow: 1.3333333333px 1.3333333333px 1.3333333333px #cc8400;
+    margin: 15.4px;
+}
+
+.yellow-ring {
+    width: 150px;
+    height: 150px;
+    border: solid 15px yellow;
+    border-radius: 500px;
+    box-shadow: 5px 5px 5px #cccc00;
+    margin: 16.5px;
+    margin: 2em;
+}
+
+.ring-last-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grey-rings {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.ring-1 {
+    width: 60px;
+    height: 60px;
+    border: solid 6px grey;
+    border-radius: 500px;
+    box-shadow: 2px 2px 2px #676767;
+    margin: 15.6px;
+    margin-left: -50px;
+}
+
+.ring-2 {
+    width: 70px;
+    height: 70px;
+    border: solid 7px grey;
+    border-radius: 500px;
+    box-shadow: 2.3333333333px 2.3333333333px 2.3333333333px #676767;
+    margin: 15.7px;
+    margin-left: -50px;
+}
+
+.ring-3 {
+    width: 80px;
+    height: 80px;
+    border: solid 8px grey;
+    border-radius: 500px;
+    box-shadow: 2.6666666667px 2.6666666667px 2.6666666667px #676767;
+    margin: 15.8px;
+    margin-left: -50px;
+}
+
+.ring-4 {
+    width: 90px;
+    height: 90px;
+    border: solid 9px grey;
+    border-radius: 500px;
+    box-shadow: 3px 3px 3px #676767;
+    margin: 15.9px;
+    margin-left: -50px;
+}
+
+.ring-5 {
+    width: 100px;
+    height: 100px;
+    border: solid 10px grey;
+    border-radius: 500px;
+    box-shadow: 3.3333333333px 3.3333333333px 3.3333333333px #676767;
+    margin: 16px;
+    margin-left: -50px;
+}
+
+.ring-6 {
+    width: 110px;
+    height: 110px;
+    border: solid 11px grey;
+    border-radius: 500px;
+    box-shadow: 3.6666666667px 3.6666666667px 3.6666666667px #676767;
+    margin: 16.1px;
+    margin-left: -50px;
+}
